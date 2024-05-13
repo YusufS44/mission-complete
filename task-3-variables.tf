@@ -11,8 +11,8 @@ variable "region-side-us1" {
 }
 
 variable "region-side-us2" {
-  description = "us-east4"
-  default     = "us-east4"
+  description = "us-central1"
+  default     = "us-central1"
 }
 
 variable "region-side-asia" {
@@ -101,8 +101,8 @@ variable "zone-side-us1" {
 }
 
 variable "zone-side-us2" {
-  description = "us-east4-a"
-  default     = "us-east4-a"
+  description = "us-central1-a"
+  default     = "us-central1-a"
 }
 
 variable "zone-side-asia" {

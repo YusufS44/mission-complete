@@ -26,7 +26,7 @@ resource "google_compute_firewall" "eu-fw" {
     ports = ["80"]
   }
   source_tags = ["vpn"]
-  source_ranges = ["10.157.0.0/24", "172.16.0.0/24", "172.17.0.0/24"]
+ source_ranges = ["10.157.0.0/24", "192.168.0.0/24"]
   target_tags = ["us1", "us2", "asia"]
 }
 

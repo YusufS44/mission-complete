@@ -23,10 +23,10 @@ resource "google_compute_firewall" "eu-fw" {
   }
   allow {
     protocol = "tcp"
-    ports = ["80"]
+    ports = ["80", "22"]
   }
   source_tags = ["vpn"]
- source_ranges = ["10.157.0.0/24", "192.168.0.0/24"]
+ source_ranges = ["10.157.0.0/24", "192.168.0.0/24", "35.235.240.0/20"]
   target_tags = ["us1", "us2", "asia"]
 }
 
